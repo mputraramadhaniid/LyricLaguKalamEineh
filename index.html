@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- Vanilla CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Lirik spek bidadari</title>
+  </head>
+  <body>
+    <div class="lyrics-container">
+      <p id="lyrics">Lirik lagu akan ditampilkan di sini.</p>
+    </div>
+    <div class="audio-player">
+      <audio id="audio" controlsList="nodownload">
+        <source src="assets/ya lil ya lile.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <input type="range" id="seekBar" value="0" step="1" />
+      <div class="controls">
+        <button id="rewindButton">
+          <span class="material-symbols-outlined">skip_previous</span>
+        </button>
+        <button id="playPauseButton">
+          <span class="material-symbols-outlined" id="playPauseIcon">play_arrow</span>
+        </button>
+        <button id="nextButton">
+          <span class="material-symbols-outlined">skip_next</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
